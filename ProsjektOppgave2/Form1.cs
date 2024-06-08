@@ -19,8 +19,28 @@ namespace ProsjektOppgave2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = inputBox.Text;
-            MessageBox.Show("Access Denied");
+            string username = Username.Text;
+            string password = Password.Text;
+            string loginName = "admin";
+            string userPassword = "password";
+            if (username == loginName && password == userPassword)
+            {
+                MessageBox.Show("Access Granted");
+            }
+            else
+            {
+                MessageBox.Show("Access Denied");
+            }
+        }
+
+        private void inputBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
